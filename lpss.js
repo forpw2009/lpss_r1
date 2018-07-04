@@ -18,6 +18,9 @@ $ui.render({ //按钮
                url: 'https://raw.githubusercontent.com/forpw2009/lpss_r1/master/lpss.js',
                handler: function(resp) {
                var data = resp.data
+			   
+			   $ui.alert(data)
+			   
                 }
              })
           }
