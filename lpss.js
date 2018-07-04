@@ -11,7 +11,15 @@ $ui.render({ //按钮
         },
         events: {
           tapped: function(sender) {
-            $ui.toast("Tapped")
+            //$ui.toast("Tapped")
+			
+			$http.get
+			({
+               url: 'https://raw.githubusercontent.com/forpw2009/lpss_r1/master/lpss.js',
+               handler: function(resp) {
+               var data = resp.data
+                }
+             })
           }
         }
       }
